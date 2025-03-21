@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121.
+-->
+<Project>
+  <PropertyGroup>
+    <_PublishTargetUrl>E:\VSWork\MyGitHub\个人博客网站Blog\可乐不加冰Easy.Admin\src\backend\Easy.Admin.Web.Entry\bin\Release\net8.0\publish\</_PublishTargetUrl>
+    <History>True|2024-04-24T06:22:45.4148637Z;True|2024-04-24T11:35:38.4122551+08:00;True|2024-04-23T16:41:42.8346508+08:00;True|2024-04-23T16:25:42.1160136+08:00;True|2024-04-23T09:35:01.9818681+08:00;True|2024-04-19T15:42:47.9681206+08:00;True|2024-04-12T15:40:35.7862496+08:00;True|2024-03-08T09:37:29.9727103+08:00;</History>
+    <LastFailureDetails />
+  </PropertyGroup>
+</Project>

@@ -20,21 +20,21 @@ import { useApp } from "@/stores/app";
 const appStore = useApp();
 const { blogSetting } = storeToRefs(appStore);
 onMounted(() => {
-  // 播放器文档api https://aplayer.js.org/#/zh-Hans/
-  // const op = new APlayer({
-  //   container: document.getElementById("player")!,
-  //   fixed: true,
-  //   autoplay: true,
-  //   audio: [
-  //     {
-  //       name: "山茶花读不懂白玫瑰",
-  //       artist: "Li笑笑",
-  //       url: "http://124.71.129.173:9000/test/music/山茶花读不懂白玫瑰.mp3",
-  //       cover: "http://124.71.129.173:9000/test/music/山茶花读不懂白玫瑰.png",
-  //       lrc: "http://124.71.129.173:9000/test/music/山茶花读不懂白玫瑰.lrc",
-  //     },
-  //   ],
-  // });
+  //播放器文档api https://aplayer.js.org/#/zh-Hans/
+  const op = new APlayer({
+    container: document.getElementById("player")!,
+    fixed: true,
+    autoplay: true,
+    audio: [
+      {
+        name: "海阔天空",
+        artist: "Beyond",
+        url: "http://111.173.104.127:8081/oss/music/songs/海阔天空.mp3",
+        cover: "http://111.173.104.127:8081/oss/2025/03/25/JdMnyaBeMq.jpg",
+        lrc: "",
+      },
+    ],
+  });
 });
 </script>
 

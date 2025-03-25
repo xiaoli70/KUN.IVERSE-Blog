@@ -245,6 +245,9 @@ const Login = async () => {
         const response = await OAuthApi.loginemail(state.ruleForm);
         if (response.statusCode === 200) {
             window.location.href = response.data;
+        }else{
+            onCaptchaChange();
+
         }
     } catch (error) {
         toast.error("登录失败，请检查账号密码");

@@ -106,13 +106,13 @@
             恋爱
           </router-link>
         </div>
-        <!-- <div class="menus-item">
+        <div class="menus-item">
           <router-link class="menu-btn" to="/links">
            
-            <v-icon size="small">mdi mdi-camera-iris</v-icon>
-            友链
+            <v-icon size="small">mdi-cog</v-icon>
+            工具箱
           </router-link>
-        </div> -->
+        </div>
         <div class="menus-item">
           <router-link class="menu-btn" to="/about">
             <!-- <i class="iconfont iconzhifeiji" />  -->

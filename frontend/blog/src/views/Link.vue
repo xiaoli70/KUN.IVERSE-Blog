@@ -1,12 +1,12 @@
 <template>
   <!-- banner -->
   <div class="link-banner banner" :style="cover">
-    <h1 class="banner-title">友情链接</h1>
+    <h1 class="banner-title">极客箱</h1>
   </div>
   <!-- 链接列表 -->
   <v-card class="blog-container">
     <div class="link-title mb-1">
-      <v-icon color="blue">mdi-link-variant</v-icon> 友情链接
+      <v-icon color="blue">mdi-link-variant</v-icon> 常用工具
     </div>
     <v-row class="link-container">
       <v-col
@@ -27,7 +27,7 @@
       </v-col>
     </v-row>
     <!-- 说明 -->
-    <div class="link-title mt-4 mb-4">
+    <!-- <div class="link-title mt-4 mb-4">
       <span
         ><v-icon color="blue">mdi-dots-horizontal-circle</v-icon> 添加友链</span
       >
@@ -40,7 +40,7 @@
     <div class="mt-5 mb-5">需要交换友链的可前往个人中心填写💖</div>
     <blockquote class="mb-10">
       友链信息展示需要，您的信息格式要包含：名称、介绍、链接、头像
-    </blockquote>
+    </blockquote> -->
     <!-- 评论 -->
     <Comment :type="0" />
   </v-card>
@@ -100,6 +100,7 @@ blockquote {
 }
 .link-container {
   margin: 10px 10px 0;
+  padding-bottom: 120px;
 }
 .link-wrapper {
   position: relative;

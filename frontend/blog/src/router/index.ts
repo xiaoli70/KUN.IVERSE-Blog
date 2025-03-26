@@ -108,7 +108,7 @@ const routes: Array<RouteRecordRaw> = [
     path: "/links",
     component: () => import("../views/Link.vue"),
     meta: {
-      title: "友情链接",
+      title: "极客箱",
     },
   },
   {

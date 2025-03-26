@@ -201,7 +201,7 @@
             <div style="padding: 4px 0 0">
               运行时间:<span class="float-right">{{ state.runTime }}</span>
             </div>
-            <div style="padding: 4px 0 0">
+            <!-- <div style="padding: 4px 0 0">
               用户数量:<span class="float-right">
                 {{ report.userCount }}
               </span>
@@ -210,7 +210,7 @@
               友链数量:<span class="float-right">
                 {{ report.linkCount }}
               </span>
-            </div>
+            </div> -->
           </div>
         </v-card>
       </div>

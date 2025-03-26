@@ -12329,11 +12329,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\VSWork\\MyGitHub\\个人博客网站Blog\\可乐不加冰Easy.Admin\\src\\backend\\Easy.Admin.Web.Entry\\Easy.Admin.Web.Entry.csproj",
+      "projectUniqueName": "E:\\VSWork\\MyGitHub\\个人博客网站Blog\\KUNIVERSE-Blog\\backend\\Easy.Admin.Web.Entry\\Easy.Admin.Web.Entry.csproj",
       "projectName": "Easy.Admin.Web.Entry",
-      "projectPath": "E:\\VSWork\\MyGitHub\\个人博客网站Blog\\可乐不加冰Easy.Admin\\src\\backend\\Easy.Admin.Web.Entry\\Easy.Admin.Web.Entry.csproj",
+      "projectPath": "E:\\VSWork\\MyGitHub\\个人博客网站Blog\\KUNIVERSE-Blog\\backend\\Easy.Admin.Web.Entry\\Easy.Admin.Web.Entry.csproj",
       "packagesPath": "E:\\packages",
-      "outputPath": "E:\\VSWork\\MyGitHub\\个人博客网站Blog\\可乐不加冰Easy.Admin\\src\\backend\\Easy.Admin.Web.Entry\\obj\\",
+      "outputPath": "E:\\VSWork\\MyGitHub\\个人博客网站Blog\\KUNIVERSE-Blog\\backend\\Easy.Admin.Web.Entry\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -12350,8 +12350,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "E:\\VSWork\\MyGitHub\\个人博客网站Blog\\可乐不加冰Easy.Admin\\src\\backend\\Easy.Admin.Web.Core\\Easy.Admin.Web.Core.csproj": {
-              "projectPath": "E:\\VSWork\\MyGitHub\\个人博客网站Blog\\可乐不加冰Easy.Admin\\src\\backend\\Easy.Admin.Web.Core\\Easy.Admin.Web.Core.csproj"
+            "E:\\VSWork\\MyGitHub\\个人博客网站Blog\\KUNIVERSE-Blog\\backend\\Easy.Admin.Web.Core\\Easy.Admin.Web.Core.csproj": {
+              "projectPath": "E:\\VSWork\\MyGitHub\\个人博客网站Blog\\KUNIVERSE-Blog\\backend\\Easy.Admin.Web.Core\\Easy.Admin.Web.Core.csproj"
             }
           }
         }

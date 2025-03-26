@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "8G9N3Puf7Ze2ljIF1ehkK85o3ouUTKkkIsmFzridHT8PXoMCJlVlJYT25zN/YGJQOpEYo2BGOSIHSH4rsRGmvw==",
+  "dgSpecHash": "DAbO2pSnh9C0V7+i5z1aeRv2sr2dGaJz0+tUdE4xfFnzJY6vEQCPPAaCNwd/7ZPksSxvharQxwRYjuUyNkA8EA==",
   "success": true,
-  "projectFilePath": "E:\\VSWork\\MyGitHub\\个人博客网站Blog\\可乐不加冰Easy.Admin\\src\\backend\\Easy.Admin.Web.Entry\\Easy.Admin.Web.Entry.csproj",
+  "projectFilePath": "E:\\VSWork\\MyGitHub\\个人博客网站Blog\\KUNIVERSE-Blog\\backend\\Easy.Admin.Web.Entry\\Easy.Admin.Web.Entry.csproj",
   "expectedPackageFiles": [
     "E:\\packages\\aliyun.oss.sdk.netcore\\2.13.0\\aliyun.oss.sdk.netcore.2.13.0.nupkg.sha512",
     "E:\\packages\\aspnetcoreratelimit\\5.0.0\\aspnetcoreratelimit.5.0.0.nupkg.sha512",

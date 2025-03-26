@@ -31,6 +31,7 @@ public class AppController : IDynamicApiController
     /// </summary>
     /// <returns></returns>
     [HttpGet]
+    [DisplayName("访问博客")]
     public async Task<BlogOutput> Info()
     {
         var blogSetting = await _customConfigService.Get<BlogSetting>();

@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Easy.Admin.Web.Entry")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+775f48f5a912545305042cdc53bc79c2936e4829")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
 [assembly: System.Reflection.AssemblyProductAttribute("Easy.Admin.Web.Entry")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Easy.Admin.Web.Entry")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

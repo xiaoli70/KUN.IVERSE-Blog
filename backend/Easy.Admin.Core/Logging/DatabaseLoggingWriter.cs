@@ -3,6 +3,8 @@ using Easy.Admin.Core.Entities;
 using Furion.Logging;
 using Newtonsoft.Json;
 using Easy.Core;
+using System.Diagnostics;
+using Microsoft.Extensions.Logging;
 
 namespace Easy.Admin.Core.Logging;
 // 数据库日志
@@ -58,12 +60,16 @@ public class DatabaseLoggingWriter : IDatabaseLoggingWriter, IDisposable
             return;
         }
 
+        bool isinfo = json.displayName.ToString() == "Easy.Admin.Application.Client.AppController.Info";
+        if (!isinfo) { 
         //不记录操作日志列表查询和博客的操作记录
         if ("SysOperationLogService".Equals(json.controllerTypeName.ToString(), StringComparison.CurrentCultureIgnoreCase) &&
             "List".Equals(json.actionTypeName.ToString(), StringComparison.CurrentCultureIgnoreCase) || (json.controllerTypeName.ToString().EndsWith("Controller", StringComparison.CurrentCultureIgnoreCase) && logMsg.Exception == null))
         {
             return;
         }
+        }
+   
 
         //记录登录日志
         long? userId = null;
@@ -76,6 +82,7 @@ public class DatabaseLoggingWriter : IDatabaseLoggingWriter, IDisposable
                 break;
             }
         }
+        
         //记录操作日志
         var sysOperationLog = new SysOperationLog
         {
@@ -97,7 +104,7 @@ public class DatabaseLoggingWriter : IDatabaseLoggingWriter, IDisposable
             OsDescription = $"{json.osDescription}（{json.osArchitecture}）",
             Location = location,
             Exception = logMsg.Exception == null ? null : JsonConvert.SerializeObject(logMsg.Exception),
-            LogLevel = logMsg.LogLevel,
+            LogLevel = isinfo ? LogLevel.Trace : logMsg.LogLevel,
             CreatedTime = logMsg.LogDateTime
         };
         _sysOperationLogRepository.Insert(sysOperationLog);

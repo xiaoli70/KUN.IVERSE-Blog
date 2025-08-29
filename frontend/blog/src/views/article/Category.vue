@@ -26,6 +26,8 @@ import { reactive, computed, onMounted } from "vue";
 import ArticleApi from "@/api/ArticleApi";
 import { useApp } from "@/stores/app";
 import type { ArticleReportOutput, CategoryOutput } from "@/api/models";
+import { getFullImageUrl } from "@/utils/config";
+
 const appStore = useApp();
 const state = reactive({
   categories: [] as CategoryOutput[],
@@ -34,7 +36,7 @@ const state = reactive({
 const cover = computed(() => {
   return (
     "background: url(" +
-    appStore.categoryCover() +
+    getFullImageUrl(appStore.categoryCover()) +
     ") center center / cover no-repeat"
   );
 });

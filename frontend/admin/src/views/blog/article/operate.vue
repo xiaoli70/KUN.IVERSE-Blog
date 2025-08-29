@@ -226,6 +226,7 @@ import { useRoute } from 'vue-router';
 type ImageUploadType = (url: string, alt: string, href: string) => void;
 type VideoUploadType = (url: string, poster: string) => void;
 import miitBus from '/@/utils/mitt';
+import { getFullImageUrl } from '/@/utils/other';
 const route = useRoute();
 // wangEditor富文本编辑器实例
 const editorRef = shallowRef<IDomEditor>();
@@ -325,7 +326,7 @@ const state = reactive({
 				async customUpload(file: File, insertFn: ImageUploadType) {
 					const data = await http.upload('/file/upload', { file });
 					if (data && data.length > 0) {
-						insertFn(data[0].url, '', '');
+						insertFn(getFullImageUrl(data[0].url), '', '');
 					}
 				},
 			},
@@ -335,7 +336,7 @@ const state = reactive({
 					const data = await http.upload('/file/upload', { file });
 					if (data && data.length > 0) {
 						// 视频url和视频封面
-						insertFn(data[0].url, '');
+						insertFn(getFullImageUrl(data[0].url), '');
 					}
 				},
 			},
@@ -407,7 +408,7 @@ const onUploadMdImg = async (pos: any, file: any) => {
 	fd.append('file', file);
 	const data = await http.upload('/file/upload', fd);
 	if (data && data.length > 0) {
-		mdRef.value.$img2Url(pos, data[0].url);
+		mdRef.value.$img2Url(pos, getFullImageUrl(data[0].url));
 	}
 };
 // 保存

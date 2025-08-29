@@ -13,7 +13,7 @@
         style="flex-basis: auto"
       >
         <div class="album-item">
-          <v-img class="album-cover" :src="item.cover!" cover />
+          <v-img class="album-cover" :src="getFullImageUrl(item.cover!)" cover />
           <router-link :to="'/albums/' + item.id" class="album-wrapper">
             <div class="album-name">{{ item.name }}</div>
             <div class="album-desc">{{ item.remark ?? item.name }}</div>
@@ -46,6 +46,8 @@ import AlbumsApi from "@/api/AlbumsApi";
 import { useApp } from "@/stores/app";
 import type { AlbumsOutput } from "@/api/models";
 import type { Pagination } from "@/api/models/pagination";
+import { getFullImageUrl } from "@/utils/config";
+
 const state = reactive({
   query: {
     pageNo: 1,
@@ -58,7 +60,7 @@ const appStore = useApp();
 const cover = computed(() => {
   return (
     "background: url(" +
-    appStore.albumCover() +
+    getFullImageUrl(appStore.albumCover()) +
     ") center center / cover no-repeat"
   );
 });

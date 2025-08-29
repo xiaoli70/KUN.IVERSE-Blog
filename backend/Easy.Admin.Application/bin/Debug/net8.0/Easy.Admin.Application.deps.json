@@ -2417,7 +2417,10 @@
           "Yitter.IdGenerator": "1.0.14"
         },
         "runtime": {
-          "Easy.Admin.Core.dll": {}
+          "Easy.Admin.Core.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       }
     }

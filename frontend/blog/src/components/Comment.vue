@@ -47,7 +47,7 @@
       :key="item.id"
     >
       <!-- 头像 -->
-      <v-avatar size="40" class="comment-avatar" :image="item.avatar!" />
+      <v-avatar size="40" class="comment-avatar" :image="getFullImageUrl(item.avatar!)" />
       <div class="comment-meta">
         <!-- 用户名 -->
         <div class="comment-user">
@@ -93,7 +93,7 @@
         >
           <!-- 头像 -->
           <v-avatar size="36" class="comment-avatar">
-            <img :src="reply.avatar!" />
+            <img :src="getFullImageUrl(reply.avatar!)" />
           </v-avatar>
           <div class="reply-meta">
             <!-- 用户名 -->
@@ -213,6 +213,7 @@ import EmojiList from "../assets/emoji";
 import CommentApi from "@/api/CommentApi";
 import type { CommentOutput, ReplyOutput } from "@/api/models";
 import { useToast } from "@/stores/toast";
+import { getFullImageUrl } from "@/utils/config";
 const props = defineProps<{
   type?: number | string;
 }>();

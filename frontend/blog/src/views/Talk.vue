@@ -8,7 +8,7 @@
     <div class="talk-wrapper">
       <!-- 用户信息 -->
       <div class="user-info-wrapper">
-        <v-avatar size="36" class="user-avatar" :image="info.avatar!" />
+        <v-avatar size="36" class="user-avatar" :image="getFullImageUrl(info.avatar!)" />
         <div class="user-detail-wrapper">
           <div class="user-nickname">
             {{ info.nikeName }}
@@ -30,7 +30,7 @@
             >
               <v-img
                 class="images-items"
-                :src="img"
+                :src="getFullImageUrl(img)"
                 aspect-ratio="1"
                 max-height="200"
                 @click="previewImg"
@@ -81,6 +81,7 @@ import "viewerjs/dist/viewer.css";
 import type { TalkDetailOutput } from "@/api/models";
 import { storeToRefs } from "pinia";
 import CommentApi from "@/api/CommentApi";
+import { getFullImageUrl } from "@/utils/config";
 const appStore = useApp();
 const { info } = storeToRefs(appStore);
 const route = useRoute();
@@ -92,7 +93,7 @@ const state = reactive({
 const cover = computed(() => {
   return (
     "background: url(" +
-    appStore.tagListCover() +
+    getFullImageUrl(appStore.tagListCover()) +
     ") center center / cover no-repeat"
   );
 });

@@ -59,6 +59,7 @@ import CustomConfigApi from '/@/api/CustomConfigApi';
 import CustomConfigItemApi from '/@/api/CustomConfigItemApi';
 import type { ColumnProps } from '/@/components/ProTable/interface';
 import { ElMessage } from 'element-plus';
+import { getFullImageUrl } from '/@/utils/other';
 const route = useRoute();
 // 引入组件
 const RenderDialog = defineAsyncComponent(() => import('./renderDialog.vue'));
@@ -121,7 +122,7 @@ onMounted(async () => {
 						}
 						switch (item.type) {
 							case 'picture-upload':
-								return <el-image shape="square" size={100} fit="cover" src={option.limit == 1 ? v : v[0]} />;
+								return <el-image shape="square" size={100} fit="cover" src={getFullImageUrl(option.limit == 1 ? v : v[0])} />;
 							case 'select':
 							case 'checkbox':
 							case 'radio':

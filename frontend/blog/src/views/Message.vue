@@ -33,7 +33,7 @@
         <template v-slot:dm="{ index, danmu }">
           <span class="barrage-items" :key="index">
             <img
-              :src="danmu.avatar"
+              :src="getFullImageUrl(danmu.avatar)"
               width="30"
               height="30"
               style="border-radius: 50%"
@@ -56,6 +56,8 @@ import CommentApi from "@/api/CommentApi";
 import { CommentOutput } from "@/api/models";
 import { storeToRefs } from "pinia";
 import { useToast } from "@/stores/toast";
+import { getFullImageUrl } from "@/utils/config";
+
 const appStore = useApp();
 const authStore = useAuth();
 const toast = useToast();
@@ -93,7 +95,7 @@ const danmaku = ref<any>(null);
 const cover = computed(() => {
   return (
     "background: url(" +
-    appStore.messageCover() +
+    getFullImageUrl(appStore.messageCover()) +
     ") center center / cover no-repeat"
   );
 });

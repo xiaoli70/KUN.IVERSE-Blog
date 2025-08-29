@@ -17,7 +17,7 @@
         :key="item.id"
       >
         <a :href="item.link!" target="_blank">
-          <v-avatar size="65" class="link-avatar" :image="item.logo!">
+          <v-avatar size="65" class="link-avatar" :image="getFullImageUrl(item.logo!)">
           </v-avatar>
           <div style="width: 100%; z-index: 10">
             <div class="link-name">{{ item.siteName }}</div>
@@ -53,6 +53,8 @@ import { useApp } from "@/stores/app";
 import AppApi from "@/api/AppApi";
 import { storeToRefs } from "pinia";
 import { FriendLinkOutput } from "@/api/models";
+import { getFullImageUrl } from "@/utils/config";
+
 const appStore = useApp();
 const { blogSetting } = storeToRefs(appStore);
 const state = reactive({
@@ -65,7 +67,7 @@ const avatar = computed(() => {
 const cover = computed(() => {
   return (
     "background: url(" +
-    appStore.linkCover() +
+    getFullImageUrl(appStore.linkCover()) +
     ") center center / cover no-repeat"
   );
 });

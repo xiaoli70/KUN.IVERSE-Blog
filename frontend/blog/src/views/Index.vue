@@ -54,7 +54,7 @@
               class="on-hover"
               width="100%"
               height="100%"
-              :src="item.cover!"
+              :src="getFullImageUrl(item.cover!)"
               :cover="true"
             />
           </router-link>
@@ -118,7 +118,7 @@
         <v-card class="animated zoomIn blog-card">
           <div class="author-wrapper">
             <!-- 博主头像 -->
-            <v-avatar size="110" class="author-avatar" :image="info.avatar!" />
+            <v-avatar size="110" class="author-avatar" :image="getFullImageUrl(info.avatar!)" />
             <div style="font-size: 1.375rem; margin-top: 0.625rem">
               {{ info.nikeName }}
             </div>
@@ -229,6 +229,7 @@ import dayjs from "dayjs";
 import type { ArticleOutput, TalksOutput } from "@/api/models";
 import TalksApi from "@/api/TalksApi";
 import { useToast } from "@/stores/toast";
+import { getFullImageUrl } from "@/utils/config";
 const appStore = useApp();
 const { blogSetting, info, report } = storeToRefs(appStore);
 // 打字机配置
@@ -301,7 +302,8 @@ const isRight = (index: number): string => {
 };
 // 封面图
 const cover = computed(() => {
-  return `background: url(${appStore.homeCover()}) center center / cover no-repeat`;
+  const relativePath = appStore.homeCover(); // 假设返回值为 /uploads/xxx.jpg
+  return `background: url(${getFullImageUrl(relativePath)}) center center / cover no-repeat`;
 });
 
 // 监听页码发生改变

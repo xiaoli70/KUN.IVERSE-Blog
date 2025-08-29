@@ -146,7 +146,7 @@
           <template v-else>
             <img
               class="user-avatar"
-              :src="info?.avatar!"
+              :src="getFullImageUrl(info?.avatar!)"
               height="30"
               width="30"
             />
@@ -182,8 +182,9 @@ import { onMounted, watch, reactive } from "vue";
 import { useDrawerSettingStore } from "../../stores/drawerSetting";
 import OAuthApi from "@/api/OAuthApi";
 import SearchModel from "../SearchModel.vue";
-import LoginModel from "../LoginModel.vue";
+import LoginModel from "../LoginModelSimple.vue";
 import { useAuth } from "@/stores/auth";
+import { getFullImageUrl } from "@/utils/config";
 const authStore = useAuth();
 const vm = reactive({
   scrollTop: 0,

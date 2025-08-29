@@ -8,6 +8,7 @@ import type {
 } from "axios";
 import { Session } from "./storage";
 import { useToast } from "@/stores/toast";
+import { API_URL } from "./config";
 
 // token 键定义
 export const accessTokenKey = "access-token";
@@ -70,7 +71,7 @@ class Axios {
 
   // 基础配置，url和超时时间
   baseConfig: AxiosRequestConfig = {
-    baseURL: "http://111.173.104.127:8081/api", //import.meta.env.VITE_API_URL,
+    baseURL: API_URL, //import.meta.env.VITE_API_URL,
     headers: { "Content-Type": "application/json" },
     timeout: 30000,
   };

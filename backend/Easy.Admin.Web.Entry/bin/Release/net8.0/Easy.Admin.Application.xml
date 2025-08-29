@@ -1137,6 +1137,13 @@
             <param name="dto"></param>
             <returns></returns>
         </member>
+        <member name="M:Easy.Admin.Application.Client.CommentController.Addbless(Easy.Admin.Application.Client.Dtos.AddCommentInput)">
+            <summary>
+            评论祝福
+            </summary>
+            <param name="dto"></param>
+            <returns></returns>
+        </member>
         <member name="M:Easy.Admin.Application.Client.CommentController.Praise(Easy.Admin.Core.Shared.KeyDto)">
             <summary>
             点赞/取消点赞

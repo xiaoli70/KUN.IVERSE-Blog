@@ -37,7 +37,7 @@
               >
                 <v-img
                   class="images-items"
-                  :src="img"
+                  :src="getFullImageUrl(img)"
                   aspect-ratio="1"
                   max-height="200"
                   @click.prevent="previewImg($event)"
@@ -92,11 +92,16 @@ import TalksApi from "@/api/TalksApi";
 import type { TalksOutput } from "@/api/models";
 import type { Pagination } from "@/api/models/pagination";
 import { storeToRefs } from "pinia";
+import { getFullImageUrl } from "@/utils/config";
+
 const appStore = useApp();
 const { info } = storeToRefs(appStore);
 // 页面数据
 const state = reactive({
-  query: {} as Pagination,
+  query: {
+    pageNo: 1,
+    pageSize: 10,
+  } as Pagination,
   talks: [] as TalksOutput[],
   pages: 0,
 });
@@ -109,7 +114,7 @@ const previewImg = (e: Event): void => {
 const cover = computed(() => {
   return (
     "background: url(" +
-    appStore.talkCover() +
+    getFullImageUrl(appStore.talkCover()) +
     ") center center / cover no-repeat"
   );
 });

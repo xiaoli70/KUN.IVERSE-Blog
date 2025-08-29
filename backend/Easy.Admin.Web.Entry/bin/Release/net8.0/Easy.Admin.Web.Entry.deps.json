@@ -2254,7 +2254,10 @@
           "MimeKit": "4.1.0"
         },
         "runtime": {
-          "Easy.Admin.Application.dll": {}
+          "Easy.Admin.Application.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "Easy.Admin.Core/1.0.0": {
@@ -2275,7 +2278,10 @@
           "Yitter.IdGenerator": "1.0.14"
         },
         "runtime": {
-          "Easy.Admin.Core.dll": {}
+          "Easy.Admin.Core.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "Easy.Admin.Web.Core/1.0.0": {
@@ -2284,7 +2290,10 @@
           "EasyCaching.Serialization.Json": "1.9.2"
         },
         "runtime": {
-          "Easy.Admin.Web.Core.dll": {}
+          "Easy.Admin.Web.Core.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       }
     }

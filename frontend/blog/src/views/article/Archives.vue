@@ -43,10 +43,12 @@ import { useApp } from "@/stores/app";
 import ArticleApi from "@/api/ArticleApi";
 import type { ArticleListQueryInput } from "@/api/models/article-list-query-input";
 import type { ArticleOutput } from "@/api/models";
+import { getFullImageUrl } from "@/utils/config";
+
 const appStore = useApp();
 const cover = computed(
   () =>
-    `background: url(${appStore.archivesCover()}) center center / cover no-repeat`
+    `background: url(${getFullImageUrl(appStore.archivesCover())}) center center / cover no-repeat`
 );
 const state = reactive({
   query: {

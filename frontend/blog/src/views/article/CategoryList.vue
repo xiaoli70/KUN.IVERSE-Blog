@@ -17,7 +17,7 @@
                 class="on-hover"
                 width="100%"
                 height="100%"
-                :src="item.cover ?? ''"
+                :src="getFullImageUrl(item.cover ?? '')"
                 :cover="true"
               />
             </router-link>
@@ -82,6 +82,8 @@ import { useApp } from "@/stores/app";
 import { useRoute } from "vue-router";
 import type { ArticleListQueryInput } from "@/api/models/article-list-query-input";
 import type { ArticleOutput } from "@/api/models";
+import { getFullImageUrl } from "@/utils/config";
+
 const route = useRoute();
 const appStore = useApp();
 const state = reactive({
@@ -97,7 +99,7 @@ const state = reactive({
   articles: [] as ArticleOutput[],
 });
 const cover = computed(() => {
-  return "background: url(" + state.cover + ") center center / cover no-repeat";
+  return "background: url(" + getFullImageUrl(state.cover) + ") center center / cover no-repeat";
 });
 
 const loadData = async () => {

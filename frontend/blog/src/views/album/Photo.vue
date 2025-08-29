@@ -10,7 +10,7 @@
         v-for="(item, index) of state.photos"
         class="photo"
         :key="index"
-        :src="item.url!"
+        :src="getFullImageUrl(item.url!)"
       />
     </div>
     <!-- 无限加载 -->
@@ -28,6 +28,8 @@ import Viewer from "viewerjs";
 import "viewerjs/dist/viewer.css";
 import { useRoute } from "vue-router";
 import type { PictureOutput } from "@/api/models";
+import { getFullImageUrl } from "@/utils/config";
+
 const route = useRoute();
 const state = reactive({
   photos: [] as PictureOutput[],
@@ -44,7 +46,7 @@ onMounted(async () => {
   const { data, extras } = await AlbumsApi.pictures(state.query);
   state.photos = data?.rows ?? [];
   state.cover =
-    "background: url(" + extras?.cover + ") center center / cover no-repeat";
+    "background: url(" + getFullImageUrl(extras?.cover) + ") center center / cover no-repeat";
   state.name = extras?.name;
   nextTick(() => {
     viewer.value = new Viewer(document.getElementById("photos") as HTMLElement);

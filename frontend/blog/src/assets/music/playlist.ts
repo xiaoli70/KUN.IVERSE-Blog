@@ -12,7 +12,7 @@ export const playlist: Song[] = [
     name: '海阔天空',
     artist: 'Beyond',
     cover: 'http://111.173.104.127:8081/oss/2024/03/04/ANba4d0Mpm.jpg',
-    url: 'http://111.173.104.127:8081/oss/music/songs/海阔天空.mp3'
+    url: 'http://140.246.62.164:8088/oss/music/songs/海阔天空.mp3'
   }
   
 ];

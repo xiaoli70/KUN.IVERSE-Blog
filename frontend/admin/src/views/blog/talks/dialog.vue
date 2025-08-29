@@ -88,6 +88,7 @@ import TalksApi from '/@/api/TalksApi';
 import { Editor, Toolbar } from '@wangeditor/editor-for-vue';
 import type { IDomEditor, IEditorConfig, IToolbarConfig } from '@wangeditor/editor';
 import http from '/@/utils/http';
+import { getFullImageUrl } from '/@/utils/other';
 type ImageUploadType = (url: string, alt: string, href: string) => void;
 type VideoUploadType = (url: string, poster: string) => void;
 // 定义子组件向父组件传值/事件
@@ -126,7 +127,7 @@ const state = reactive({
 				async customUpload(file: File, insertFn: ImageUploadType) {
 					const data = await http.upload('/file/upload', { file });
 					if (data && data.length > 0) {
-						insertFn(data[0].url, '', '');
+						insertFn(getFullImageUrl(data[0].url), '', '');
 					}
 				},
 			},
@@ -136,7 +137,7 @@ const state = reactive({
 					const data = await http.upload('/file/upload', { file });
 					if (data && data.length > 0) {
 						// 视频url和视频封面
-						insertFn(data[0].url, '');
+						insertFn(getFullImageUrl(data[0].url), '');
 					}
 				},
 			},

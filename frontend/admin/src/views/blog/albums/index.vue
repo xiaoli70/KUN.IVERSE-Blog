@@ -6,7 +6,7 @@
 				<el-tag :type="scope.row.status === 0 ? 'success' : 'danger'"> {{ scope.row.status === 0 ? '启用' : '禁用' }}</el-tag>
 			</template>
 			<template #cover="{ row }">
-				<el-image shape="square" :size="100" fit="cover" :src="row.cover" />
+				<el-image shape="square" :size="100" fit="cover" :src="getFullImageUrl(row.cover)" />
 			</template>
 			<template #isVisible="{ row }">
 				<el-tag :type="row.isVisible ? 'success' : 'danger'"> {{ row.isVisible ? '显示' : '隐藏' }}</el-tag>
@@ -51,6 +51,7 @@ import { ElMessage, ElMessageBox } from 'element-plus';
 import AlbumsApi from '/@/api/AlbumsApi';
 import type { UpdateAlbumsInput } from '/@/api/models';
 import { auth, auths } from '/@/utils/authFunction';
+import { getFullImageUrl } from '/@/utils/other';
 
 // 引入组件
 const AlbumDialog = defineAsyncComponent(() => import('./dialog.vue'));

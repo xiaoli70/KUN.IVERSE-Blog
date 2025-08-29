@@ -22,14 +22,14 @@
 			<el-row :gutter="15" v-if="state.tableData.data.length > 0" v-loading="state.loading">
 				<el-col :xs="24" :sm="12" :md="8" :lg="6" :xl="4" class="mb15" v-for="v in state.tableData.data" :key="v.id">
 					<div class="img-box">
-						<el-image style="width: 250px; height: 180px" :src="v.url" fit="cover" lazy />
+						<el-image style="width: 250px; height: 180px" :src="getFullImageUrl(v.url!)" fit="cover" lazy />
 						<div class="operate">
 							<div
 								class="handle-icon"
 								@click="
 												() => {
 													imgViewVisible = true;
-													imageUrl = v.url!;
+													imageUrl = getFullImageUrl(v.url!);
 												}
 											"
 							>
@@ -73,6 +73,7 @@ import type { PicturesPageOutput } from '/@/api/models';
 import { Session } from '/@/utils/storage';
 import { accessTokenKey } from '/@/utils/request';
 import UploadImg from '/@/components/Upload/Img.vue';
+import { getFullImageUrl } from '/@/utils/other';
 const uploadUrl = import.meta.env.VITE_API_URL + '/file/upload';
 // 添加请求头配置
 const uploadImageUrl = ref('');

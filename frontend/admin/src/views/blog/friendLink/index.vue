@@ -16,7 +16,7 @@
 					shape="square"
 					:size="100"
 					fit="cover"
-					:src="row.logo"
+					:src="getFullImageUrl(row.logo)"
 				/>
 			</template>
 			<template #status="scope">
@@ -41,6 +41,7 @@ import { ElMessage } from 'element-plus';
 import FriendLinkApi from '/@/api/FriendLinkApi';
 import type { UpdateFriendLinkInput } from '/@/api/models';
 import { auths } from '/@/utils/authFunction';
+import { getFullImageUrl } from '/@/utils/other';
 
 // 引入组件
 const LinkDialog = defineAsyncComponent(() => import('./dialog.vue'));

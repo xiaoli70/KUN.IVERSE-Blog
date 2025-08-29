@@ -17,12 +17,14 @@ import { useApp } from "@/stores/app";
 import img from "../assets/images/1.jpg";
 import { computed } from "vue";
 import { storeToRefs } from "pinia";
+import { getFullImageUrl } from "@/utils/config";
+
 const appStore = useApp();
 const { info } = storeToRefs(appStore);
 const cover = computed(() => {
   return (
     "background: url(" +
-    appStore.aboutCover() +
+    getFullImageUrl(appStore.aboutCover()) +
     ") center center / cover no-repeat"
   );
 });

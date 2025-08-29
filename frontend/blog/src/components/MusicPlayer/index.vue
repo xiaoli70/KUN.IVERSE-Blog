@@ -2,7 +2,7 @@
   <div class="music-player" :class="{ 'mini-mode': isMiniMode }">
     <div class="player-content">
       <div class="song-info">
-        <img :src="currentSong.cover || '/default-cover.jpg'" alt="封面" class="cover-img" />
+        <img :src="getFullImageUrl(currentSong.cover || '/default-cover.jpg')" alt="封面" class="cover-img" />
         <div class="song-details">
           <div class="song-name">{{ currentSong.name || '未播放' }}</div>
           <div class="artist">{{ currentSong.artist || '未知歌手' }}</div>
@@ -15,7 +15,7 @@
         </div>
         
         <div class="control-buttons">
-          <button @click="prevSong" title="上一首">
+          <button @click="prevSong" title="上一首1">
             <i class="fas fa-step-backward"></i>
           </button>
           <button @click="togglePlay" class="play-btn" title="播放/暂停">
@@ -41,6 +41,7 @@
 <script setup lang="ts">
 import { ref, reactive, onMounted } from 'vue'
 import { playlist } from '@/assets/music/playlist'
+import { getFullImageUrl } from '@/utils/config'
 
 // 播放状态
 const isPlaying = ref(false)

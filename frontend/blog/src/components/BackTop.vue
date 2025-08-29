@@ -14,6 +14,7 @@
 <script setup lang="ts">
 import { ref, Ref, onMounted, onUnmounted } from "vue";
 import { useThemeSettingStore } from "../stores/themeSetting";
+import { API_BASE_URL } from "../utils/config";
 const scrollTop: Ref<number> = ref(0);
 const isShow: Ref<string> = ref("");
 const isOut: Ref<string> = ref("rightside-out");
@@ -54,7 +55,7 @@ onMounted(() => {
 });
 const togglePlay = (): void => {
   if (!audio.value) {
-    audio.value = new Audio('http://111.173.104.127:8081/oss/music/songs/海阔天空.mp3');
+    audio.value = new Audio(`${API_BASE_URL}/oss/music/songs/海阔天空.mp3`);
   }
   
   if (isPlaying.value) {

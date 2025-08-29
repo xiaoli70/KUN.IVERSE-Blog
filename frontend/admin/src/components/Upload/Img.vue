@@ -15,7 +15,7 @@
 			accept="image/*"
 		>
 			<template v-if="imageUrl">
-				<img :src="imageUrl" class="upload-image" />
+				<img :src="getFullImageUrl(imageUrl)" class="upload-image" />
 				<div class="upload-handle" @click.stop>
 					<div class="handle-icon" @click="editImg" v-if="!self_disabled">
 						<el-icon><Edit /></el-icon>
@@ -43,7 +43,7 @@
 		<div class="el-upload__tip">
 			<slot name="tip"></slot>
 		</div>
-		<el-image-viewer v-if="imgViewVisible" @close="imgViewVisible = false" :url-list="[imageUrl]" />
+		<el-image-viewer v-if="imgViewVisible" @close="imgViewVisible = false" :url-list="[getFullImageUrl(imageUrl)]" />
 	</div>
 </template>
 
@@ -52,6 +52,7 @@ import { ref, computed, inject } from 'vue';
 import { ElNotification, formContextKey, formItemContextKey } from 'element-plus';
 import type { UploadProps, UploadRequestOptions } from 'element-plus';
 import http from '/@/utils/http';
+import { getFullImageUrl } from '/@/utils/other';
 
 interface UploadFileProps {
 	imageUrl: string; // 图片地址 ==> 必传

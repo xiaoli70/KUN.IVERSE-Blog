@@ -24,6 +24,8 @@ import { reactive, computed, onMounted } from "vue";
 import ArticleApi from "@/api/ArticleApi";
 import { useApp } from "@/stores/app";
 import type { TagsOutput } from "@/api/models";
+import { getFullImageUrl } from "@/utils/config";
+
 const appStore = useApp();
 const state = reactive({
   tags: [] as TagsOutput[],
@@ -31,7 +33,7 @@ const state = reactive({
 const cover = computed(() => {
   return (
     "background: url(" +
-    appStore.tagCover() +
+    getFullImageUrl(appStore.tagCover()) +
     ") center center / cover no-repeat"
   );
 });

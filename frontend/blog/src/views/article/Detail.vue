@@ -299,6 +299,7 @@ import { useRoute } from "vue-router";
 import { storeToRefs } from "pinia";
 import type { ArticleBasicsOutput, ArticleInfoOutput } from "@/api/models";
 import CommentApi from "@/api/CommentApi";
+import { getFullImageUrl } from "@/utils/config";
 const appStore = useApp();
 const toastStore = useToast();
 const { blogSetting } = storeToRefs(appStore);
@@ -314,7 +315,7 @@ let viewer: Viewer | null = null;
 //封面图
 const cover = computed(() => {
   return (
-    "background: url(" + state.info.cover + ") center center / cover no-repeat"
+    "background: url(" + getFullImageUrl(state.info.cover || '') + ") center center / cover no-repeat"
   );
 });
 // 文章链接

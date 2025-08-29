@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "E:\\VSWork\\MyGitHub\\个人博客网站Blog\\KUNIVERSE-Blog\\backend\\Easy.Admin.Web.Entry\\Easy.Admin.Web.Entry.csproj": {}
+    "D:\\LYK\\个人博客\\KUN.IVERSE-Blog\\backend\\Easy.Admin.Web.Entry\\Easy.Admin.Web.Entry.csproj": {}
   },
   "projects": {
-    "E:\\VSWork\\MyGitHub\\个人博客网站Blog\\KUNIVERSE-Blog\\backend\\Easy.Admin.Application\\Easy.Admin.Application.csproj": {
+    "D:\\LYK\\个人博客\\KUN.IVERSE-Blog\\backend\\Easy.Admin.Application\\Easy.Admin.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\VSWork\\MyGitHub\\个人博客网站Blog\\KUNIVERSE-Blog\\backend\\Easy.Admin.Application\\Easy.Admin.Application.csproj",
+        "projectUniqueName": "D:\\LYK\\个人博客\\KUN.IVERSE-Blog\\backend\\Easy.Admin.Application\\Easy.Admin.Application.csproj",
         "projectName": "Easy.Admin.Application",
-        "projectPath": "E:\\VSWork\\MyGitHub\\个人博客网站Blog\\KUNIVERSE-Blog\\backend\\Easy.Admin.Application\\Easy.Admin.Application.csproj",
-        "packagesPath": "E:\\packages",
-        "outputPath": "E:\\VSWork\\MyGitHub\\个人博客网站Blog\\KUNIVERSE-Blog\\backend\\Easy.Admin.Application\\obj\\",
+        "projectPath": "D:\\LYK\\个人博客\\KUN.IVERSE-Blog\\backend\\Easy.Admin.Application\\Easy.Admin.Application.csproj",
+        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+        "outputPath": "D:\\LYK\\个人博客\\KUN.IVERSE-Blog\\backend\\Easy.Admin.Application\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,14 +26,15 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "E:\\VSWork\\MyGitHub\\个人博客网站Blog\\KUNIVERSE-Blog\\backend\\Easy.Admin.Core\\Easy.Admin.Core.csproj": {
-                "projectPath": "E:\\VSWork\\MyGitHub\\个人博客网站Blog\\KUNIVERSE-Blog\\backend\\Easy.Admin.Core\\Easy.Admin.Core.csproj"
+              "D:\\LYK\\个人博客\\KUN.IVERSE-Blog\\backend\\Easy.Admin.Core\\Easy.Admin.Core.csproj": {
+                "projectPath": "D:\\LYK\\个人博客\\KUN.IVERSE-Blog\\backend\\Easy.Admin.Core\\Easy.Admin.Core.csproj"
               }
             }
           }
@@ -38,6 +43,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -69,21 +79,25 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.401/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "E:\\VSWork\\MyGitHub\\个人博客网站Blog\\KUNIVERSE-Blog\\backend\\Easy.Admin.Core\\Easy.Admin.Core.csproj": {
+    "D:\\LYK\\个人博客\\KUN.IVERSE-Blog\\backend\\Easy.Admin.Core\\Easy.Admin.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\VSWork\\MyGitHub\\个人博客网站Blog\\KUNIVERSE-Blog\\backend\\Easy.Admin.Core\\Easy.Admin.Core.csproj",
+        "projectUniqueName": "D:\\LYK\\个人博客\\KUN.IVERSE-Blog\\backend\\Easy.Admin.Core\\Easy.Admin.Core.csproj",
         "projectName": "Easy.Admin.Core",
-        "projectPath": "E:\\VSWork\\MyGitHub\\个人博客网站Blog\\KUNIVERSE-Blog\\backend\\Easy.Admin.Core\\Easy.Admin.Core.csproj",
-        "packagesPath": "E:\\packages",
-        "outputPath": "E:\\VSWork\\MyGitHub\\个人博客网站Blog\\KUNIVERSE-Blog\\backend\\Easy.Admin.Core\\obj\\",
+        "projectPath": "D:\\LYK\\个人博客\\KUN.IVERSE-Blog\\backend\\Easy.Admin.Core\\Easy.Admin.Core.csproj",
+        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+        "outputPath": "D:\\LYK\\个人博客\\KUN.IVERSE-Blog\\backend\\Easy.Admin.Core\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -91,6 +105,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -103,6 +118,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -182,21 +202,25 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.401/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "E:\\VSWork\\MyGitHub\\个人博客网站Blog\\KUNIVERSE-Blog\\backend\\Easy.Admin.Web.Core\\Easy.Admin.Web.Core.csproj": {
+    "D:\\LYK\\个人博客\\KUN.IVERSE-Blog\\backend\\Easy.Admin.Web.Core\\Easy.Admin.Web.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\VSWork\\MyGitHub\\个人博客网站Blog\\KUNIVERSE-Blog\\backend\\Easy.Admin.Web.Core\\Easy.Admin.Web.Core.csproj",
+        "projectUniqueName": "D:\\LYK\\个人博客\\KUN.IVERSE-Blog\\backend\\Easy.Admin.Web.Core\\Easy.Admin.Web.Core.csproj",
         "projectName": "Easy.Admin.Web.Core",
-        "projectPath": "E:\\VSWork\\MyGitHub\\个人博客网站Blog\\KUNIVERSE-Blog\\backend\\Easy.Admin.Web.Core\\Easy.Admin.Web.Core.csproj",
-        "packagesPath": "E:\\packages",
-        "outputPath": "E:\\VSWork\\MyGitHub\\个人博客网站Blog\\KUNIVERSE-Blog\\backend\\Easy.Admin.Web.Core\\obj\\",
+        "projectPath": "D:\\LYK\\个人博客\\KUN.IVERSE-Blog\\backend\\Easy.Admin.Web.Core\\Easy.Admin.Web.Core.csproj",
+        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+        "outputPath": "D:\\LYK\\个人博客\\KUN.IVERSE-Blog\\backend\\Easy.Admin.Web.Core\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -204,14 +228,15 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "E:\\VSWork\\MyGitHub\\个人博客网站Blog\\KUNIVERSE-Blog\\backend\\Easy.Admin.Application\\Easy.Admin.Application.csproj": {
-                "projectPath": "E:\\VSWork\\MyGitHub\\个人博客网站Blog\\KUNIVERSE-Blog\\backend\\Easy.Admin.Application\\Easy.Admin.Application.csproj"
+              "D:\\LYK\\个人博客\\KUN.IVERSE-Blog\\backend\\Easy.Admin.Application\\Easy.Admin.Application.csproj": {
+                "projectPath": "D:\\LYK\\个人博客\\KUN.IVERSE-Blog\\backend\\Easy.Admin.Application\\Easy.Admin.Application.csproj"
               }
             }
           }
@@ -220,6 +245,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -247,21 +277,25 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.401/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "E:\\VSWork\\MyGitHub\\个人博客网站Blog\\KUNIVERSE-Blog\\backend\\Easy.Admin.Web.Entry\\Easy.Admin.Web.Entry.csproj": {
+    "D:\\LYK\\个人博客\\KUN.IVERSE-Blog\\backend\\Easy.Admin.Web.Entry\\Easy.Admin.Web.Entry.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\VSWork\\MyGitHub\\个人博客网站Blog\\KUNIVERSE-Blog\\backend\\Easy.Admin.Web.Entry\\Easy.Admin.Web.Entry.csproj",
+        "projectUniqueName": "D:\\LYK\\个人博客\\KUN.IVERSE-Blog\\backend\\Easy.Admin.Web.Entry\\Easy.Admin.Web.Entry.csproj",
         "projectName": "Easy.Admin.Web.Entry",
-        "projectPath": "E:\\VSWork\\MyGitHub\\个人博客网站Blog\\KUNIVERSE-Blog\\backend\\Easy.Admin.Web.Entry\\Easy.Admin.Web.Entry.csproj",
-        "packagesPath": "E:\\packages",
-        "outputPath": "E:\\VSWork\\MyGitHub\\个人博客网站Blog\\KUNIVERSE-Blog\\backend\\Easy.Admin.Web.Entry\\obj\\",
+        "projectPath": "D:\\LYK\\个人博客\\KUN.IVERSE-Blog\\backend\\Easy.Admin.Web.Entry\\Easy.Admin.Web.Entry.csproj",
+        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+        "outputPath": "D:\\LYK\\个人博客\\KUN.IVERSE-Blog\\backend\\Easy.Admin.Web.Entry\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -269,14 +303,15 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "E:\\VSWork\\MyGitHub\\个人博客网站Blog\\KUNIVERSE-Blog\\backend\\Easy.Admin.Web.Core\\Easy.Admin.Web.Core.csproj": {
-                "projectPath": "E:\\VSWork\\MyGitHub\\个人博客网站Blog\\KUNIVERSE-Blog\\backend\\Easy.Admin.Web.Core\\Easy.Admin.Web.Core.csproj"
+              "D:\\LYK\\个人博客\\KUN.IVERSE-Blog\\backend\\Easy.Admin.Web.Core\\Easy.Admin.Web.Core.csproj": {
+                "projectPath": "D:\\LYK\\个人博客\\KUN.IVERSE-Blog\\backend\\Easy.Admin.Web.Core\\Easy.Admin.Web.Core.csproj"
               }
             }
           }
@@ -285,6 +320,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -315,7 +355,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.401/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

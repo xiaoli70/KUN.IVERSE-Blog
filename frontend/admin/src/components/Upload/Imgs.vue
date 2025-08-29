@@ -23,7 +23,7 @@
 				</slot>
 			</div>
 			<template #file="{ file }">
-				<img :src="file.url" class="upload-image" />
+				<img :src="getFullImageUrl(file.url)" class="upload-image" />
 				<div class="upload-handle" @click.stop>
 					<div class="handle-icon" @click="handlePictureCardPreview(file)">
 						<el-icon><ZoomIn /></el-icon>
@@ -49,6 +49,7 @@ import { Plus } from '@element-plus/icons-vue';
 import type { UploadProps, UploadFile, UploadUserFile, UploadRequestOptions } from 'element-plus';
 import { ElNotification, formContextKey, formItemContextKey } from 'element-plus';
 import http from '/@/utils/http';
+import { getFullImageUrl } from '/@/utils/other';
 
 interface UploadFileProps {
 	fileList: UploadUserFile[];
@@ -207,7 +208,7 @@ const handleExceed = () => {
 const viewImageUrl = ref('');
 const imgViewVisible = ref(false);
 const handlePictureCardPreview: UploadProps['onPreview'] = (file) => {
-	viewImageUrl.value = file.url!;
+	viewImageUrl.value = getFullImageUrl(file.url!);
 	imgViewVisible.value = true;
 };
 </script>

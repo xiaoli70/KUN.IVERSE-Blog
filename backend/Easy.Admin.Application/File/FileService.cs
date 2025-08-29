@@ -64,7 +64,7 @@ public class FileService : IDynamicApiController, ITransient
             await file.CopyToAsync(stream);
             await stream.DisposeAsync();
             var request = _httpContextAccessor.HttpContext!.Request;
-            string url = $"{request.Scheme}://{request.Host.Value}/{filePath}{name}{extension}";
+            string url = $"/{filePath}{name}{extension}";
             return new List<UploadFileOutput>()
             {
                 new()

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Easy.Admin.Application")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7670c6f51493eac6e42009b9aa392cf7dab1468c")]
 [assembly: System.Reflection.AssemblyProductAttribute("Easy.Admin.Application")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Easy.Admin.Application")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

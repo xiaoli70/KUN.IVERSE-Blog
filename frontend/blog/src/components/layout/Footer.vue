@@ -19,23 +19,23 @@ import APlayer from "APlayer";
 import { useApp } from "@/stores/app";
 const appStore = useApp();
 const { blogSetting } = storeToRefs(appStore);
-onMounted(() => {
-  //播放器文档api https://aplayer.js.org/#/zh-Hans/
-  const op = new APlayer({
-    container: document.getElementById("player")!,
-    fixed: true,
-    autoplay: true,
-    audio: [
-      {
-        name: "海阔天空",
-        artist: "Beyond",
-        url: "http://111.173.104.127:8081/oss/music/songs/海阔天空.mp3",
-        cover: "http://111.173.104.127:8081/oss/2025/03/25/JdMnyaBeMq.jpg",
-        lrc: "",
-      },
-    ],
-  });
-});
+// onMounted(() => {
+//   //播放器文档api https://aplayer.js.org/#/zh-Hans/
+//   const op = new APlayer({
+//     container: document.getElementById("player")!,
+//     fixed: true,
+//     autoplay: true,
+//     audio: [
+//       {
+//         name: "海阔天空",
+//         artist: "Beyond",
+//         url: "http://192.168.18.13:5000/oss/music/songs/海阔天空.mp3",
+//         cover: "",
+//         lrc: "",
+//       },
+//     ],
+//   });
+// });
 </script>
 
 <style scoped>

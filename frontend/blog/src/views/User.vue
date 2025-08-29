@@ -18,7 +18,7 @@
             <v-avatar
               size="140"
               class="author-avatar"
-              :image="info?.avatar ?? img"
+              :image="getFullImageUrl(info?.avatar ?? img)"
             />
           </button>
         </v-col>
@@ -129,6 +129,8 @@ import { storeToRefs } from "pinia";
 import { AddLinkOutput } from "@/api/models";
 import OAuthApi from "@/api/OAuthApi";
 import { useToast } from "@/stores/toast";
+import { getFullImageUrl } from "@/utils/config";
+
 const appStore = useApp();
 const authStore = useAuth();
 const toastStore = useToast();
@@ -144,7 +146,7 @@ const state = reactive({
     logo: info.value?.logo ?? "",
   } as AddLinkOutput,
   success: false,
-  cover: `background: url(${appStore.userCover()}) center center / cover no-repeat`,
+  cover: `background: url(${getFullImageUrl(appStore.userCover())}) center center / cover no-repeat`,
 });
 const required = (v: string) => {
   return !!v || "此项为必填";
